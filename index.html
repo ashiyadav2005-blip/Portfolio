@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Himanshi Yadav | IT Enthusiast</title>
+  <meta name="description" content="Portfolio of Himanshi Yadav, IT enthusiast and CITS trainee (CSA) at NSTI Kanpur.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Himanshi Yadav | IT Enthusiast">
+  <meta property="og:description" content="CITS trainee in Computer Software Application at NSTI Kanpur. Projects, skills and certificates.">
+  <!-- Favicon: replace with your own file later, e.g. assets/images/favicon.png -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230e7c86'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif'%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Apply saved theme before the page paints, to avoid a flash -->
+  <script>
+    try {
+      var t = localStorage.getItem("theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="#home">Himanshi Yadav</a>
+    <nav id="menu" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#training">Training</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-btn" class="icon-btn" aria-label="Switch light or dark theme">Theme</button>
+    <button id="menu-btn" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">Menu</button>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I am</p>
+        <h1>Himanshi Yadav</h1>
+        <p class="headline">IT Enthusiast and CITS trainee in Computer Software Application</p>
+        <p class="intro">I am learning to build practical software at NSTI Kanpur. I enjoy Python, databases and web basics, and I am looking for opportunities to grow as a technical assistant or data entry professional.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="assets/documents/resume.pdf" download>Download resume</a>
+          <a class="btn ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/images/profile.jpg" alt="Portrait of Himanshi Yadav" width="600" height="600">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <p class="lead">I am an ITI COPA graduate who completed a one-year apprenticeship as a Data Entry Operator at Government ITI, Pandu Nagar, Kanpur. I am now a CITS trainee in Computer Software Application at NSTI Kanpur (2026–27). I built an AI-powered interview preparation system as my project and I like learning new tools quickly.</p>
+    </section>
+
+    <!-- EDUCATION (content comes from DATA.education in js/script.js) -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="timeline" id="education-list"></div>
+    </section>
+
+    <!-- SKILLS (content comes from DATA.skills) -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="grid" id="skills-list"></div>
+    </section>
+
+    <!-- PROJECTS (content comes from DATA.projects) -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid" id="projects-list"></div>
+    </section>
+
+    <!-- TRAINING (content comes from DATA.training) -->
+    <section id="training" class="section">
+      <h2>Training and apprenticeship</h2>
+      <div class="timeline" id="training-list"></div>
+    </section>
+
+    <!-- CERTIFICATIONS (content comes from DATA.certs) -->
+    <section id="certifications" class="section">
+      <h2>Certificates</h2>
+      <div class="grid" id="certs-list"></div>
+    </section>
+
+    <!-- CONTACT: edit these links directly -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="lead">Email is the quickest way to reach me.</p>
+      <ul class="contact">
+        <li><span>Email</span><a href="mailto:yhimanshi7589@gmail.com">yhimanshi7589@gmail.com</a></li>
+        <li><span>Phone</span><a href="tel:+917307898635">7307898635</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/himanshi-yadav-157857448" target="_blank" rel="noopener">linkedin.com/in/himanshi-yadav-157857448</a></li>
+        <li><span>GitHub</span><a href="https://github.com/Himanshi123-tech" target="_blank" rel="noopener">github.com/Himanshi123-tech</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Himanshi Yadav. Kanpur, Uttar Pradesh.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
